@@ -30,7 +30,7 @@
 }
 
 /* smartphones base */
-@media (max-width:680px)  {
+@media (max-width:767px)  {
   html, body {
     margin: 0;
     overflow-x: hidden;
@@ -588,9 +588,10 @@ footer .buscarbottom {
 }
 footer .final{
   background-color: #09999D;
-  height: 4em;
+  height: 6em;
   padding: 1em;
   text-align: center;
+  margin-top: 0;
 }
 .busicon {
   color: #09999D;
@@ -611,6 +612,7 @@ footer .final{
         font-size: 0.8em;
         text-shadow: 1px 1px 1px #000;
         margin-left: -2em;
+        padding-top: 0;
     }
     .menubottom ul li {
         float: left;
@@ -630,7 +632,9 @@ footer .final{
 }
 
 /* tabletas vertical, notebooks, laptops, desktops */
-@media (min-width:680px) and (max-width:1280)  {
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
   html, body {
     margin: 0;
     overflow-x: hidden;
@@ -1225,7 +1229,7 @@ footer .final{
 }
 
 /* hi-res laptop, desktops */
-@media (min-width:1280px) { 
+@media (min-width:1025px) { 
     html, body {
         margin: 0;
         overflow-x: hidden;
@@ -1810,5 +1814,74 @@ footer .final{
   .menubottom ul li a:hover{
       color: #00292A;
       border-color: #00292A;
+  }
+}
+
+/********* CONTENIDOS INTERNOS **********/
+
+@media (max-width:767px)  {
+  .contenido {
+    position: relative;
+    z-index: 20000;
+  }
+  .contenido .titlepage {
+    font-family: 'brand';
+    background-color: #fff;
+    color: #09999D;
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #09999D;
+  }
+  .contenido .contentpage {
+    background-color: #fff;
+    font-family: 'textos';
+    padding: 2em;
+  }
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  .contenido {
+    position: relative;
+    z-index: 20000;
+    margin-top: -5em;
+  }
+  .contenido .titlepage {
+    font-family: 'brand';
+    background-color: #fff;
+    color: #09999D;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    padding-left: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .contenido .contentpage {
+    background-color: #fff;
+    font-family: 'textos';
+    padding: 2em;
+  }
+}
+@media (min-width:1025px) {
+  .contenido {
+    position: relative;
+    z-index: 20000;
+    margin-top: -5em;
+  }
+  .contenido .titlepage {
+    font-family: 'brand';
+    background-color: #fff;
+    color: #09999D;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    padding-left: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .contenido .contentpage {
+    background-color: #fff;
+    font-family: 'textos';
+    padding: 2em;
   }
 }
