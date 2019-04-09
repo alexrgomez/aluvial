@@ -1858,10 +1858,79 @@ footer .final{
     text-align: center;
     border-bottom: 1px solid #09999D;
   }
+  .contenido .contmain {
+    background-color: #fff;
+    font-family: 'textos';
+    padding: 2em;
+  }
+  .contenido .contmain .topenosotros {
+    width:100%;
+    display:block
+  }
+  .contenido .contmain .imgnosotros{
+    margin: 0.5em;
+    float:right;
+    width:40%
+  }
   .contenido .contentpage {
     background-color: #fff;
     font-family: 'textos';
     padding: 2em;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .contentpage ul{
+    width: 90%;
+    margin-left: -3em;
+    font-family: 'textos';
+    list-style: none;    
+  }
+  .contentpage div{
+    margin-left: 0.5em;
+    text-align: justify;
+  }  
+  .contentpage ul li{
+    width: 100%;
+    text-align: left;
+    padding: 1em;
+    border-right: 0.5em solid #00292A;
+  } 
+  .contentpage ul li a{
+    color: #09999D;
+    text-decoration: none;
+    font-weight: bold; 
+  }
+  .contentpage ul li a:hover{
+    color: #00292A;
+    margin-bottom: 0.2em;
+  }
+  .contentpage ul li:hover{
+    border-right: 0.5em solid #09999D;   
+  }
+  .contentpage ul li:active {
+    border-right: 0.5em solid #09999D;
+    margin-bottom: 0.5em;  
+  }
+  .contenido .eqlider {
+    display:block;
+  }
+  .contenido .eqlider .titlider {
+    font-family: "brand";
+    font-size: 2em;
+    text-align: center;
+    color: #09999D;
+    text-transform: uppercase;
+  }
+  .contenido .eqlider .contentlider {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .contenido .eqlider .contentlider .onelider{
+    display: grid;
+    grid-template-columns: 40% 60%;  
+    font-family: 'textos';
+    color: #09999D;
+    margin-bottom: 2em;
   }
 }
 @media only screen 
@@ -1882,10 +1951,78 @@ and (max-device-width : 1024px) {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
   }
-  .contenido .contentpage {
+  .contenido .contmain {
     background-color: #fff;
     font-family: 'textos';
     padding: 2em;
+  }
+  .contenido .contmain .topenosotros {
+    width:100%;
+    display:block
+  }
+  .contenido .contmain .imgnosotros{
+    margin: 0.5em;
+    float:right;
+    width:30%
+  }
+  .contenido .contentpage {
+    background-color: #fff;
+    font-family: 'textos';
+    padding: 0.5em;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .contentpage ul{
+    width: 90%;
+    margin-left: -3em;
+    font-family: 'textos';
+    list-style: none;
+  }
+  .contentpage div{
+    margin-left: 0.5em;
+    text-align: justify;
+  }  
+  .contentpage ul li{
+    width: 100%;
+    text-align: left;
+    padding: 1em;
+    border-right: 0.5em solid #00292A;
+  } 
+  .contentpage ul li a{
+    color: #09999D;
+    text-decoration: none;
+    font-weight: bold; 
+  }
+  .contentpage ul li a:hover{
+    color: #00292A;
+    margin-bottom: 0.2em;
+  }
+  .contentpage ul li:hover{
+    border-right: 0.5em solid #09999D;   
+  }
+  .contentpage ul li:active {
+    border-right: 0.5em solid #09999D;
+    margin-bottom: 0.5em;  
+  }
+  .contenido .eqlider {
+    display:block;
+  }
+  .contenido .eqlider .titlider {
+    font-family: "brand";
+    font-size: 2em;
+    text-align: center;
+    color: #09999D;
+    text-transform: uppercase;
+  }
+  .contenido .eqlider .contentlider {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .contenido .eqlider .contentlider .onelider{
+    display: grid;
+    grid-template-columns: 40% 60%;  
+    font-family: 'textos';
+    color: #09999D;
   }
 }
 @media (min-width:1025px) {
@@ -1904,6 +2041,20 @@ and (max-device-width : 1024px) {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
   }
+  .contenido .contmain {
+    background-color: #fff;
+    font-family: 'textos';
+    padding: 3em;
+  }
+  .contenido .contmain .topenosotros {
+    width:100%;
+    display:block
+  }
+  .contenido .contmain .imgnosotros{
+    margin: 0.5em;
+    float:right;
+    width:20%
+  }
   .contenido .contentpage {
     background-color: #fff;
     font-family: 'textos';
@@ -1915,7 +2066,11 @@ and (max-device-width : 1024px) {
     width: 100%;
     font-family: 'textos';
     list-style: none;
-  } 
+  }
+  .contentpage div{
+    margin-left: 6em;
+    text-align: justify;
+  }  
   .contentpage ul li{
     width: 100%;
     text-align: right;
@@ -1925,14 +2080,37 @@ and (max-device-width : 1024px) {
   .contentpage ul li a{
     color: #09999D;
     text-decoration: none;
-    font-weight: bold;    
-   
+    font-weight: bold; 
   }
   .contentpage ul li a:hover{
     color: #00292A;
     margin-bottom: 0.2em;
   }
-  .contentpage ul li a:hover > .contentpage ul li{
+  .contentpage ul li:hover{
+    border-right: 0.5em solid #09999D;   
+  }
+  .contentpage ul li:active {
     border-right: 0.5em solid #09999D;
+    margin-bottom: 0.5em;  
+  }
+  .contenido .eqlider {
+    display:block;
+  }
+  .contenido .eqlider .titlider {
+    font-family: "brand";
+    font-size: 2em;
+    text-align: center;
+    color: #09999D;
+    text-transform: uppercase;
+  }
+  .contenido .eqlider .contentlider {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .contenido .eqlider .contentlider .onelider{
+    display: grid;
+    grid-template-columns: 40% 60%;  
+    font-family: 'textos';
+    color: #09999D;
   }
 }
