@@ -1,5 +1,3 @@
-@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
-
 /* ---------- TIPOGRAFÍAS ---------- */
 
     /* Logo Alival */
@@ -34,7 +32,7 @@
   html, body {
     margin: 0;
     overflow-x: hidden;
-}
+  }
 header {
     background-image: url("img/tope-bw-1.jpg");
     background-repeat: no-repeat;
@@ -50,39 +48,41 @@ header {
     display: inline-block;
 }
 .menutop{
-    margin-left: -1em;
+    margin-left: -2.1em;
     width: 100%;        
 }
 .menutop ul{    
     font-family: 'textos';
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 18% 18% 18% 18% 18% 18%;
 }
 .menutop ul li {
     display: block;
-    padding: 0.3em;
+    padding: 0.5em;
     float: left;
     text-align: center;
-    background: rgba(0, 0, 0, 0.8);
-    border: solid 1px #888;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: solid 1px #FFF;
+    border-left: solid 1px #FFF;
 }
 .menutop ul li a{
     color: #FFF;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 0.6em;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
 }
-.menutop ul li a:hover{
-    color: #09999D;
-    border-color: #09999D;
-}
-.roundeditem {
+.menutop ul li a i{
+  display: block;
+  font-size: 2em;
 }
 .menutop ul li:last-child{    
   background-color: #00292A;
+  text-align: center;
 }
 .aluvialtope {
     text-align: center;
-    padding-top: 0.1em;
+    padding-top: 0.5em;
 }
 .aluvialnombre {
     font-family: 'brand';
@@ -588,8 +588,6 @@ footer .buscarbottom {
 }
 footer .final{
   background-color: #09999D;
-  height: 6em;
-  padding: 1em;
   text-align: center;
   margin-top: 0;
 }
@@ -606,28 +604,36 @@ footer .final{
       .slider-wrapper .info {
         opacity: 0;
       }
-      .menubottom ul{        
+      .menubottom ul{    
         font-family: 'textos';
-        font-weight: bold;
-        font-size: 0.8em;
-        text-shadow: 1px 1px 1px #000;
-        margin-left: -2em;
-        padding-top: 0;
+        display: grid;
+        grid-template-columns: 14% 14% 14% 14% 14% 15% 15%;
+        margin-left: -2.5em;
+        margin-top: -1em;
     }
     .menubottom ul li {
+        display: block;
+        padding: 0.5em;
         float: left;
-        display: block;    
         text-align: center;
-        padding-left: 2em;
-        margin-bottom: 1em;
+        background: rgba(0, 0, 0, 0.5);
+        border-bottom: solid 1px #FFF;
+        border-left: solid 1px #FFF;
     }
     .menubottom ul li a{
         color: #FFF;
         text-decoration: none;
+        font-size: 0.6em;
+        text-align: center;
+        text-shadow: 1px 1px 2px #000;
     }
-    .menubottom ul li a:hover{
-        color: #00292A;
-        border-color: #00292A;
+    .menubottom ul li a i{
+      display: block;
+      font-size: 2em;
+    }
+    .menubottom ul li:last-child{    
+      background-color: #00292A;
+      text-align: center;
     }
 }
 
@@ -676,6 +682,9 @@ header {
 .menutop ul li a{
     color: #FFF;
     text-decoration: none;
+}
+.menutop ul li a i{
+  display: none;
 }
 .menutop ul li a:hover{
     color: #09999D;
@@ -1226,6 +1235,13 @@ footer .final{
   color: #00292A;
   border-color: #00292A;
 }
+
+.menubottom ul li a i{
+  display: none;
+}
+.menubottom ul li:first-child{    
+  display: none;
+}
 }
 
 /* hi-res laptop, desktops */
@@ -1267,10 +1283,13 @@ footer .final{
         display: block;    
         text-align: center;
         padding-left: 2em;
-    }
+    }    
     .menutop ul li a{
         color: #FFF;
         text-decoration: none;
+    }
+    .menutop ul li a i{
+      display: none;
     }
     .menutop ul li a:hover{
         color: #09999D;
@@ -1533,7 +1552,7 @@ footer .final{
     }
     .bloquesfort .blofortsolo {
         padding-left: 7em;
-        padding-right: 7em;
+        padding-right: 6em;
     }
     .bloquesfort .blofortsolo h3 {
         font-size: 1em;
@@ -1814,7 +1833,13 @@ footer .final{
   .menubottom ul li a:hover{
       color: #00292A;
       border-color: #00292A;
-  }
+  }  
+.menubottom ul li a i{
+  display: none;
+}
+.menubottom ul li:first-child{    
+  display: none;
+}
 }
 
 /********* CONTENIDOS INTERNOS **********/
@@ -1883,5 +1908,31 @@ and (max-device-width : 1024px) {
     background-color: #fff;
     font-family: 'textos';
     padding: 2em;
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+  }
+  .contentpage ul{
+    width: 100%;
+    font-family: 'textos';
+    list-style: none;
+  } 
+  .contentpage ul li{
+    width: 100%;
+    text-align: right;
+    padding: 1em;
+    border-right: 0.5em solid #00292A;
+  } 
+  .contentpage ul li a{
+    color: #09999D;
+    text-decoration: none;
+    font-weight: bold;    
+   
+  }
+  .contentpage ul li a:hover{
+    color: #00292A;
+    margin-bottom: 0.2em;
+  }
+  .contentpage ul li a:hover > .contentpage ul li{
+    border-right: 0.5em solid #09999D;
   }
 }
